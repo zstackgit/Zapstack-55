@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   background-color: black;
+  scroll-behavior: smooth;
 }
 
 .page-wrap {
@@ -15,6 +16,7 @@ body {
   position: relative;
   overflow: hidden;
   background-color: black;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -27,6 +29,11 @@ nav {
   padding: 18px 20px;
   font-size: 15px;
   font-weight: 500;
+}
+
+.remove-link-styling {
+  text-decoration: none;
+  color: black;
 }
 
 .nav-logo-brand {
@@ -45,6 +52,9 @@ nav {
   display: none;
   justify-content: flex-start;
   flex-direction: row;
+}
+.navLinkWrapper a {
+  text-decoration: none;
 }
 
 .navLink {
@@ -70,8 +80,8 @@ nav {
   position: absolute;
   width: 100%;
   text-align: center;
-  margin-top: 300px;
-  font-size: 42px;
+  margin-top: 280px;
+  font-size: 36px;
   font-weight: 500;
   letter-spacing: 7px;
   color: white;
@@ -83,7 +93,7 @@ nav {
 .section-hero {
   position: relative;
   overflow: hidden;
-  height: 800px;
+  height: 700px;
   width: 100%;
 }
 
@@ -185,6 +195,7 @@ nav {
 }
 
 .page-btn {
+  font-size: 13px;
   padding: 10px 32px;
   border: 2px solid black;
   border-radius: 2px;
@@ -197,15 +208,6 @@ nav {
   cursor: pointer;
 }
 
-@keyframes fadeIn {
-  0% {
-    background-color: white;
-  }
-  100% {
-    color: rgb(255, 255, 255);
-    background-color: black;
-  }
-}
 .placeholder-section {
   width: 100%;
   background-color: rgb(45, 45, 45);
@@ -237,14 +239,14 @@ nav {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 80px 30px;
+  padding: 80px 0;
 }
 
 .skill-settings {
   border: 1px white solid;
-  border-radius: 12px;
-  padding: 12px 18px;
-  font-size: 13px;
+  border-radius: 2px;
+  padding: 13px 18px;
+  font-size: 17px;
   margin: 10px 10px;
   text-transform: capitalize;
 }
@@ -339,7 +341,7 @@ nav {
 .skills-container2 {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 500px auto;
+  grid-template-rows: auto;
   grid-template-areas: "skill2imagewrap skill2imagewrap" "skill2Sidebar skill2Sidebar";
   min-height: auto;
   height: auto;
@@ -352,8 +354,6 @@ nav {
   grid-area: skill2imagewrap;
   background-size: cover;
   background-position: center;
-  width: 100%;
-  height: 100%;
   background-color: rgb(107, 107, 107);
   background-image: url(./images/dylan-gillis-KdeqA3aTnBY-unsplash\ \(3\).jpg);
   filter: brightness(95%) saturate(110%) contrast(108%);
@@ -385,10 +385,10 @@ nav {
 .contact-container {
   background-color: white;
   padding: 0;
-  height: 300px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   text-align: left;
 }
@@ -480,6 +480,20 @@ footer .country-location {
     margin: 14px 18px;
     width: 100%;
   }
+  .cover-title {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 300px;
+    font-size: 42px;
+    font-weight: 500;
+    letter-spacing: 7px;
+    color: white;
+    margin-right: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
   .section-hero-img {
     position: relative;
     z-index: 1;
@@ -518,10 +532,11 @@ footer .country-location {
     min-height: 700px;
   }
   .skill-wrapper {
+    grid-area: skillsWrap;
     justify-content: center;
     margin-top: 0;
-    padding: 40px;
-    max-width: 625px;
+    padding: 40px 120px;
+    max-width: auto;
   }
   .skill-sidebar {
     grid-area: skillsSidebar;
@@ -578,8 +593,6 @@ footer .country-location {
     grid-area: skill2imagewrap;
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 100%;
     background-color: rgb(107, 107, 107);
     filter: brightness(90%);
   }
@@ -607,7 +620,7 @@ footer .country-location {
     padding: 40px 0;
   }
   footer {
-    padding: 25px 60px;
+    padding: 20px 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -626,7 +639,7 @@ footer .country-location {
     text-align: left;
     font-size: 15.5px;
     letter-spacing: 2px;
-    margin: 0 15px 0 0;
+    margin: 0 12px 0 0;
     font-weight: 600;
     text-transform: uppercase;
     color: black;

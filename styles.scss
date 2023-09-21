@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   background-color: black;
+  scroll-behavior: smooth;
 }
 
 .page-wrap{
@@ -15,6 +16,7 @@ body {
   position: relative;
   overflow: hidden;
   background-color: black;
+  scroll-behavior: smooth;
 }
 
 
@@ -34,6 +36,11 @@ nav{
   font-weight: 500;
 }
 
+  .remove-link-styling{
+    text-decoration: none;
+    color: black;
+  }
+
 .nav-logo-brand {
   font-size: 15.5px;
   letter-spacing: 2px;
@@ -50,6 +57,10 @@ nav{
   display: none;
   justify-content: flex-start;
   flex-direction: row;
+
+  a{
+    text-decoration: none;
+  }
 }
 
 .navLink{
@@ -58,6 +69,8 @@ nav{
   color:  rgb(60, 60, 60);
   margin: 0 16px;
 }
+
+
 
 .nav-button{
   padding: 7px 12.5px;
@@ -71,13 +84,17 @@ nav{
 }
 
 
+
+
+// hero
+
 .cover-title{
   z-index: 2;
   position: absolute;
   width: 100%;
   text-align: center;
-  margin-top: 300px;
-  font-size: 42px;
+  margin-top: 280px;
+  font-size: 36px;
   font-weight: 500;
   letter-spacing: 7px;
   color: white;
@@ -86,19 +103,10 @@ nav{
   text-decoration: none;
 }
 
-
-
-
-
-
-
-
-// hero
-
 .section-hero{
   position: relative;
   overflow: hidden;
-  height: 800px;
+  height: 700px;
   width: 100%;
 }
 .section-hero-img{
@@ -112,28 +120,6 @@ nav{
   background-position: 50% 103%;
   height: 100%;
 }
-
-
-// .video-container {
-//   position: relative;
-//   width: 100%;
-//   height: 100vh; 
-//   overflow: hidden;
-// }
-
-
-// #video-background {
-//   filter: brightness(50%) saturate(75%) sepia(44%);
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-// }
-
-
-
 
 
 
@@ -235,6 +221,7 @@ nav{
 }
 
 .page-btn{
+  font-size: 13px;
   padding: 10px 32px;
   border: 2px solid black;
   border-radius: 2px;
@@ -246,15 +233,6 @@ nav{
   cursor: pointer;
 }
 
-@keyframes fadeIn{
-  0%{
-    background-color: white;
-  }
-  100%{
-    color: rgb(255, 255, 255);
-    background-color: black;
-  }
-}
 
 
 
@@ -295,14 +273,14 @@ nav{
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 80px 30px;
+  padding: 80px 0;
 }
 
 .skill-settings{
   border: 1px white solid;
-  border-radius: 12px;
-  padding: 12px 18px;
-  font-size: 13px;
+  border-radius: 2px;
+  padding: 13px 18px;
+  font-size: 17px;
   margin: 10px 10px;
   text-transform: capitalize;
 }
@@ -411,7 +389,7 @@ nav{
 .skills-container2 {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 500px auto;
+  grid-template-rows: auto;
   grid-template-areas:
       "skill2imagewrap skill2imagewrap"
       "skill2Sidebar skill2Sidebar";
@@ -426,8 +404,6 @@ nav{
   grid-area: skill2imagewrap;
   background-size: cover;
   background-position: center;
-  width: 100%;
-  height: 100%;
   background-color: rgb(107, 107, 107);
   background-image: url(./images/dylan-gillis-KdeqA3aTnBY-unsplash\ \(3\).jpg);
   filter: brightness(95%) saturate(110%) contrast(108%);
@@ -468,10 +444,10 @@ nav{
 .contact-container{
   background-color: white;
   padding: 0;
-  height: 300px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   text-align: left;
 
@@ -481,7 +457,7 @@ nav{
     margin: 0;
     padding: 0;
   }
-
+  
   .container-wrap h5{
     font-size: 19px;
     font-weight: 500;
@@ -490,6 +466,7 @@ nav{
   }
   
 }
+
 
 
 
@@ -594,6 +571,25 @@ nav{
   width: 100%;
 }
 
+
+
+// hero
+
+.cover-title{
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-top: 300px;
+  font-size: 42px;
+  font-weight: 500;
+  letter-spacing: 7px;
+  color: white;
+  margin-right: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 .section-hero-img{
   position: relative;
   z-index: 1;
@@ -649,10 +645,11 @@ nav{
 }
 
 .skill-wrapper{
+  grid-area:skillsWrap;
   justify-content: center;
   margin-top: 0;
-  padding: 40px;
-  max-width: 625px;
+  padding: 40px 120px;
+  max-width: auto;
 }
 
 .skill-sidebar{
@@ -734,8 +731,6 @@ nav{
   grid-area: skill2imagewrap;
   background-size: cover;
   background-position: center;
-  width: 100%;
-  height: 100%;
   background-color: rgb(107, 107, 107);
   filter: brightness(90%);
 }
@@ -774,7 +769,7 @@ nav{
 // footer desktop
 
   footer{
-    padding: 25px 60px;
+    padding: 20px 60px;
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -794,7 +789,7 @@ nav{
       text-align: left;
       font-size: 15.5px;
       letter-spacing: 2px;
-      margin: 0 15px 0 0;
+      margin: 0 12px 0 0;
       font-weight: 600;
       text-transform: uppercase;
       color: black;
