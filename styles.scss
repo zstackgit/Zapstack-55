@@ -57,10 +57,13 @@ nav{
   display: none;
   justify-content: flex-start;
   flex-direction: row;
-
+  
+  
   a{
     text-decoration: none;
   }
+  
+
 }
 
 .navLink{
@@ -68,6 +71,9 @@ nav{
   font-weight: 500;
   color:  rgb(60, 60, 60);
   margin: 0 16px;
+  a{
+    text-decoration: none;
+  }
 }
 
 

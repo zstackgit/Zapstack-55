@@ -63,6 +63,9 @@ nav {
   color: rgb(60, 60, 60);
   margin: 0 16px;
 }
+.navLink a {
+  text-decoration: none;
+}
 
 .nav-button {
   padding: 7px 12.5px;
