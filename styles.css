@@ -341,10 +341,10 @@ nav {
   color: white;
 }
 
-.skills-container2 {
+.trust-section {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: 500px auto;
   grid-template-areas: "skill2imagewrap skill2imagewrap" "skill2Sidebar skill2Sidebar";
   min-height: auto;
   height: auto;
@@ -353,7 +353,7 @@ nav {
   background-color: white;
 }
 
-.skills2-image-wrap {
+.trust-image-wrap {
   grid-area: skill2imagewrap;
   background-size: cover;
   background-position: center;
@@ -366,20 +366,20 @@ nav {
   background-color: black;
 }
 
-.skills-2-sidebar {
+.trust-sidebar {
   grid-area: skill2Sidebar;
   padding: 40px;
   color: black;
   text-align: center;
 }
-.skills-2-sidebar h4 {
+.trust-sidebar h4 {
   font-size: 26px;
   font-weight: 500;
   line-height: 1.4;
   margin: 0 0 32px 0;
   text-transform: capitalize;
 }
-.skills-2-sidebar p {
+.trust-sidebar p {
   font-size: 15px;
   line-height: 1.6;
   margin: 0 0 32px 0;
@@ -581,7 +581,7 @@ footer .country-location {
     filter: brightness(60%);
     background-color: rgb(107, 107, 107);
   }
-  .skills-container2 {
+  .trust-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -592,7 +592,7 @@ footer .country-location {
     width: 100%;
     background-color: white;
   }
-  .skills2-image-wrap {
+  .trust-image-wrap {
     grid-area: skill2imagewrap;
     background-size: cover;
     background-position: center;
@@ -602,19 +602,19 @@ footer .country-location {
   .light-bg {
     background-color: black;
   }
-  .skills-2-sidebar {
+  .trust-sidebar {
     grid-area: skill2Sidebar;
     color: black;
     padding: 50px 40px;
   }
-  .skills-2-sidebar h4 {
+  .trust-sidebar h4 {
     font-size: 26px;
     font-weight: 500;
     line-height: 1.4;
     margin: 0 0 32px 0;
     text-transform: capitalize;
   }
-  .skills-2-sidebar p {
+  .trust-sidebar p {
     font-size: 15px;
     line-height: 1.6;
     margin: 0 0 32px 0;

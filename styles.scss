@@ -390,12 +390,12 @@ nav{
 
 
 
-// skills2  mobile
+// trust  mobile
 
-.skills-container2 {
+.trust-section {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: 500px auto;
   grid-template-areas:
       "skill2imagewrap skill2imagewrap"
       "skill2Sidebar skill2Sidebar";
@@ -406,7 +406,7 @@ nav{
   background-color: white;
 }
 
-.skills2-image-wrap{
+.trust-image-wrap{
   grid-area: skill2imagewrap;
   background-size: cover;
   background-position: center;
@@ -420,7 +420,7 @@ nav{
 }
 
 
-.skills-2-sidebar{
+.trust-sidebar{
   grid-area: skill2Sidebar;
   padding: 40px;
   color: black;
@@ -718,9 +718,9 @@ nav{
 
 
 
-// skills2
+// trust
 
-.skills-container2 {
+.trust-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
@@ -733,7 +733,7 @@ nav{
   background-color: white;
 }
 
-.skills2-image-wrap{
+.trust-image-wrap{
   grid-area: skill2imagewrap;
   background-size: cover;
   background-position: center;
@@ -746,7 +746,7 @@ nav{
 }
 
 
-.skills-2-sidebar{
+.trust-sidebar{
   grid-area: skill2Sidebar;
     color: black;
     padding: 50px 40px;
