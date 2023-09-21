@@ -76,8 +76,8 @@ nav{
   position: absolute;
   width: 100%;
   text-align: center;
-  margin-top: 320px;
-  font-size: 36px;
+  margin-top: 300px;
+  font-size: 42px;
   font-weight: 500;
   letter-spacing: 7px;
   color: white;
@@ -104,31 +104,33 @@ nav{
 .section-hero-img{
   position: relative;
   z-index: 1;
-  width: 100%;
+  height: 140%;
+  width: 145%;
   background-size: cover;
-  filter: brightness(70%);
-  background-image: url(./images/AdobeStock_298179315_Video_HD_Preview.mov);
+  filter: brightness(50%) saturate(90%) sepia(44%);
+  background-image: url(./images/christian-H9cbCNvjsjo-unsplash.jpg);
+  background-position: 50% 103%;
   height: 100%;
 }
 
-/* Apply styles to the video container */
-.video-container {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* Adjust the height as needed */
-  overflow: hidden;
-}
 
-/* Style the video element */
-#video-background {
-  filter: brightness(50%) saturate(75%) sepia(44%);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensure the video covers the entire container */
-}
+// .video-container {
+//   position: relative;
+//   width: 100%;
+//   height: 100vh; 
+//   overflow: hidden;
+// }
+
+
+// #video-background {
+//   filter: brightness(50%) saturate(75%) sepia(44%);
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+// }
 
 
 
@@ -591,6 +593,19 @@ nav{
   margin: 14px 18px;
   width: 100%;
 }
+
+.section-hero-img{
+  position: relative;
+  z-index: 1;
+  height: 140%;
+  width: 115%;
+  background-size: cover;
+  filter: brightness(50%) saturate(90%) sepia(44%);
+  background-image: url(./images/christian-H9cbCNvjsjo-unsplash.jpg);
+  background-position: 50% 84%;
+  height: 100%;
+}
+
 
 
 
