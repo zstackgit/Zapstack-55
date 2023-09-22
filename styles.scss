@@ -12,6 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   height: auto;
+  align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
@@ -28,12 +29,14 @@ nav{
   display: flex;
   background-color: white;
   flex-direction: row;
-  position: static;
+  position: sticky;
   align-items: center;
   height: auto;
   padding: 18px 20px;
   font-size: 15px;
   font-weight: 500;
+  box-sizing: border-box;
+  width: 100%;
 }
 
   .remove-link-styling{
@@ -344,6 +347,8 @@ nav{
   justify-content: center;
   align-items: center;
   background: black;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 .features-wrap{
@@ -359,7 +364,8 @@ nav{
   background-image: url(./images/sigmund-Fa9b57hffnM-unsplash\ \(1\).jpg);
   filter: brightness(60%);
   background-color: rgb(107, 107, 107);
-  }
+  
+}
 
   
 .features-content{
@@ -568,6 +574,7 @@ nav{
 .nav-logo-brand {
   font-size: 14.5px;
   letter-spacing: 2px;
+  width: auto;
 }
 
 .navLinkWrapper{
@@ -684,33 +691,33 @@ nav{
 
 .features{
   display: grid;
-  grid-template-columns: 1fr 1fr 400px;
-  grid-template-rows: 1fr;
-  grid-template-areas:
-      "featuresImage featuresImage featuresSidebar";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "featuresImage featuresImage featuresSidebar";
   height: auto;
-  padding: 110px 60px 240px 60px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: black;
+  padding: 110px 60px 200px 60px;
+  width: 100%;
+  justify-content: flex-start;
+  max-width: 100%;
 }
 
 
 .features-wrap{
   grid-area: featuresSidebar;
+  width: 400px;
 }
 
 
 .features-image{
-  grid-area: featuresImage;
+  rid-area: featuresImage;
   height: 400px;
-  width: 90%;
-  background-size: cover;
+  width: 100%;
+  background-size: clamp(300px, 80%, 800px);
+  background-repeat: no-repeat;
   background-position: center;
   background-image: url(./images/sigmund-Fa9b57hffnM-unsplash\ \(1\).jpg);
   filter: brightness(60%);
-  background-color: rgb(107, 107, 107);
+  background-color: rgb(0, 0, 0);
   }
 
 
