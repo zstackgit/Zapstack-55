@@ -37,10 +37,10 @@ nav {
 }
 
 .nav-logo-brand {
-  font-size: 15.5px;
-  letter-spacing: 2px;
+  font-size: 16px;
+  letter-spacing: 1.6px;
   margin-right: 20px;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   color: black;
   text-decoration: none;
@@ -72,7 +72,7 @@ nav {
   background-color: rgb(255, 255, 255);
   color: black;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 600;
   font-family: "Open Sans", sans-serif;
   border: 1.5px solid black;
   border-radius: 2px;
@@ -387,7 +387,7 @@ nav {
 
 .contact-container {
   background-color: white;
-  padding: 0;
+  padding: 0 40px;
   min-height: 300px;
   display: flex;
   flex-direction: column;
@@ -395,16 +395,16 @@ nav {
   align-items: center;
   text-align: center;
 }
-.contact-container .container-wrap h1 {
-  font-size: 40px;
-  font-weight: 600;
-  margin: 0;
+.contact-container h4 {
+  font-size: 26px;
+  font-weight: 500;
+  margin: 0 0 32px 0;
   padding: 0;
 }
-.contact-container .container-wrap h5 {
-  font-size: 19px;
-  font-weight: 500;
-  margin: 0;
+.contact-container p {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0 0 32px 0;
   padding: 0;
 }
 
@@ -474,8 +474,8 @@ footer .country-location {
     padding: 10px 40px;
   }
   .nav-logo-brand {
-    font-size: 14px;
-    width: auto;
+    font-size: 14.5px;
+    letter-spacing: 2px;
   }
   .navLinkWrapper {
     display: flex;
