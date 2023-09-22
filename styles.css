@@ -399,6 +399,7 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 100%;
 }
 .contact-container h4 {
   font-size: 26px;
@@ -421,6 +422,8 @@ footer {
   justify-content: center;
   align-items: center;
   margin: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 footer h4 {
   text-align: center;
@@ -509,7 +512,7 @@ footer .country-location {
     height: 140%;
     width: 115%;
     background-size: cover;
-    filter: brightness(50%) saturate(90%) sepia(44%);
+    filter: brightness(60%) saturate(90%) sepia(44%);
     background-image: url(./images/christian-H9cbCNvjsjo-unsplash.jpg);
     background-position: 50% 84%;
     height: 100%;
@@ -578,7 +581,7 @@ footer .country-location {
     width: 400px;
   }
   .features-image {
-    rid-area: featuresImage;
+    grid-area: featuresImage;
     height: 400px;
     width: 100%;
     background-size: clamp(300px, 80%, 800px);
