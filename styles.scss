@@ -118,16 +118,16 @@ nav{
   height: 700px;
   width: 100%;
 }
-.section-hero-img{
+
+.hero-img{
   position: relative;
   z-index: 1;
-  height: 140%;
+  height: 100%;
   width: 145%;
   background-size: cover;
   filter: brightness(50%) saturate(90%) sepia(44%);
   background-image: url(./images/christian-H9cbCNvjsjo-unsplash.jpg);
   background-position: 50% 103%;
-  height: 100%;
 }
 
 
@@ -596,7 +596,7 @@ nav{
   position: absolute;
   width: 100%;
   text-align: center;
-  margin-top: 300px;
+  margin-top: 270px;
   font-size: 42px;
   font-weight: 500;
   letter-spacing: 7px;
@@ -606,16 +606,15 @@ nav{
   text-decoration: none;
 }
 
-.section-hero-img{
+.hero-img{
   position: relative;
   z-index: 1;
-  height: 140%;
-  width: 115%;
+  height: 111%;
+  width: 111%;
   background-size: cover;
   filter: brightness(60%) saturate(90%) sepia(44%);
   background-image: url(./images/christian-H9cbCNvjsjo-unsplash.jpg);
-  background-position: 50% 84%;
-  height: 100%;
+  background-position: 50% 64%;
 }
 
 
