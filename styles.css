@@ -16,8 +16,8 @@ body {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  background-color: black;
   scroll-behavior: smooth;
+  font-family: "Open Sans", sans-serif;
 }
 
 nav {
@@ -40,8 +40,8 @@ nav {
 }
 
 .nav-logo-brand {
-  font-size: 16px;
-  letter-spacing: 1.6px;
+  font-size: 18.5px;
+  letter-spacing: 1.8px;
   margin-right: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -61,7 +61,7 @@ nav {
 }
 
 .navLink {
-  font-size: 12.5px;
+  font-size: 13.5px;
   font-weight: 500;
   color: rgb(60, 60, 60);
   margin: 0 16px;
@@ -81,15 +81,15 @@ nav {
   border-radius: 2px;
 }
 
-.cover-title {
+.hero-title {
   z-index: 2;
   position: absolute;
   width: 100%;
   text-align: center;
-  margin-top: 280px;
-  font-size: 36px;
+  margin-top: 260px;
+  font-size: 35px;
   font-weight: 500;
-  letter-spacing: 7px;
+  letter-spacing: 3px;
   color: white;
   margin-right: 20px;
   text-transform: uppercase;
@@ -111,44 +111,39 @@ nav {
   background-size: cover;
   filter: brightness(50%) saturate(90%) sepia(44%);
   background-image: url(./images/christian-H9cbCNvjsjo-unsplash.jpg);
-  background-position: 50% 103%;
+  background-position: 50% 100%;
 }
 
-.stats-section {
-  width: 100%;
-  background-color: rgb(255, 255, 255);
+.performance {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px;
   height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-  padding: 55px 0;
-}
-
-.container {
   background-color: white;
-  padding: 20px;
-  height: 100%;
-  width: 200px;
-  display: flex;
-  flex-direction: column;
+  text-align: center;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  width: 100%;
 }
-.container .container-wrap h1 {
-  font-size: 40px;
-  font-weight: 600;
-  margin: 0;
+.performance .content {
+  display: flex;
+  flex-direction: column;
   padding: 0;
+  margin: 25px 0;
 }
-.container .container-wrap h5 {
-  font-size: 19px;
+.performance .content h3 {
+  font-size: 36px;
   font-weight: 500;
-  margin: 0;
-  padding: 0;
+  line-height: 1;
+  margin: 0 0 16px 0;
+  text-transform: capitalize;
+}
+.performance .content p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0 0 0 0;
+  text-transform: capitalize;
 }
 
 .content-section {
@@ -159,6 +154,7 @@ nav {
   flex-direction: row;
   height: auto;
   width: 100%;
+  background-color: white;
 }
 
 .image {
@@ -170,19 +166,14 @@ nav {
 }
 
 .content-image1 {
-  background-image: url(./images/steven-wei-jwiJbwLQRA4-unsplash.jpg);
-  filter: brightness(60%);
-}
-
-.content-image2 {
-  background-image: url(./images/desktop-annie-spratt-QckxruozjRg-unsplash.jpg);
+  background-image: url(./images/mobile-robin-worrall-FPt10LXK0cg-unsplash.jpg);
   filter: brightness(60%);
 }
 
 .content {
   grid-area: introContent;
   height: auto;
-  padding: 50px 40px;
+  padding: 80px 30px;
   background-color: white;
   color: black;
 }
@@ -194,17 +185,19 @@ nav {
   text-transform: capitalize;
 }
 .content p {
-  font-size: 15px;
-  line-height: 1.6;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
   margin: 0 0 32px 0;
 }
 
 .page-btn {
-  font-size: 13px;
-  padding: 10px 32px;
-  border: 2px solid black;
-  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 24px;
+  border: 1.5px solid black;
   color: black;
+  font-family: "Open Sans", sans-serif;
   background-color: white;
   cursor: pointer;
 }
@@ -213,82 +206,59 @@ nav {
   cursor: pointer;
 }
 
-.placeholder-section {
+.skill-chips-section {
   width: 100%;
-  background-color: rgb(45, 45, 45);
-  height: 300px;
-}
-
-.skills-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas: "skillsSidebar" "skillsWrap";
-  min-height: auto;
-  padding: 115px 40px 85px 40px;
-  color: white;
-  row-gap: 40px;
-}
-
-.skill-wrapper {
-  grid-area: skillsWrap;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0;
-}
-
-.wrap {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 80px 0;
-}
-
-.skill-settings {
-  border: 1px white solid;
-  border-radius: 2px;
-  padding: 13px 18px;
-  font-size: 17px;
-  margin: 10px 10px;
-  text-transform: capitalize;
-}
-
-.skill1 {
-  grid-area: skill1;
-}
-
-.skill2 {
-  grid-area: skill2;
-}
-
-.skill3 {
-  grid-area: skill3;
-}
-
-.skill4 {
-  grid-area: skill4;
-}
-
-.skill-sidebar {
-  grid-area: skillsSidebar;
-  width: 100%;
-  padding: 0;
+  box-sizing: border-box;
+  padding: 120px 30px;
+  background-color: rgb(0, 0, 0);
   color: white;
 }
-.skill-sidebar h4 {
+.skill-chips-section .skill-content-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 840px;
+}
+.skill-chips-section .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.skill-chips-section .content-wrapper h4 {
   font-size: 26px;
   font-weight: 500;
   line-height: 1.4;
   margin: 0 0 32px 0;
   text-transform: capitalize;
+  text-align: center;
 }
-.skill-sidebar p {
-  font-size: 15px;
-  line-height: 1.6;
+.skill-chips-section .content-wrapper p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.8;
   margin: 0 0 32px 0;
+  text-align: center;
+}
+.skill-chips-section .skill-chip-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.skill-chips-section .skill-chip-wrapper .skills-chip {
+  border: 1px white solid;
+  padding: 14px 24px;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 10px 10px;
+  text-transform: capitalize;
 }
 
 .features {
@@ -478,10 +448,10 @@ footer .country-location {
 @media (min-width: 1050px) {
   nav {
     height: auto;
-    padding: 10px 40px;
+    padding: 8px 40px;
   }
   .nav-logo-brand {
-    font-size: 14.5px;
+    font-size: 16.5px;
     letter-spacing: 2px;
     width: auto;
   }
@@ -491,13 +461,16 @@ footer .country-location {
     margin: 14px 18px;
     width: 100%;
   }
-  .cover-title {
+  .section-hero {
+    height: 760px;
+  }
+  .hero-title {
     z-index: 2;
     position: absolute;
     width: 100%;
     text-align: center;
-    margin-top: 270px;
-    font-size: 42px;
+    margin-top: 280px;
+    font-size: 44px;
     font-weight: 500;
     letter-spacing: 7px;
     color: white;
@@ -506,62 +479,57 @@ footer .country-location {
     text-decoration: none;
   }
   .hero-img {
-    position: relative;
-    z-index: 1;
-    height: 111%;
-    width: 111%;
+    height: 110%;
+    width: 110%;
     background-size: cover;
     filter: brightness(60%) saturate(90%) sepia(44%);
-    background-image: url(./images/christian-H9cbCNvjsjo-unsplash.jpg);
-    background-position: 50% 64%;
+    background-position: 50% 50%;
   }
   .stats-section {
-    flex-direction: row;
+    flex-direction: column;
     -moz-column-gap: 20px;
          column-gap: 20px;
-    padding: 85px 0;
+    padding: 65px 0;
+  }
+  .stats-section .containers-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .stats-section .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .performance {
+    display: flex;
+    flex-direction: row;
+    padding: 70px 60px;
+    color: white;
+    height: auto;
+    -moz-column-gap: 80px;
+         column-gap: 80px;
+  }
+  .performance .content h3 {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0 0 22px 0;
+    text-transform: capitalize;
+  }
+  .performance .content p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0 0 0 0;
+    text-transform: capitalize;
   }
   .content-section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 800px;
+    grid-template-columns: 400px 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: "introContent introImage introImage";
     flex-direction: row;
-    height: auto;
+    height: 800px;
     width: 100%;
-  }
-  .skills-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: "skillsWrap skillsWrap skillsSidebar";
-    min-height: auto;
-    padding: 170px 60px 0 60px;
-    color: white;
-    height: auto;
-    min-height: 700px;
-  }
-  .skill-wrapper {
-    grid-area: skillsWrap;
-    justify-content: center;
-    margin-top: 0;
-    padding: 40px 120px;
-    max-width: auto;
-  }
-  .skill-sidebar {
-    grid-area: skillsSidebar;
-    width: 400px;
-  }
-  .wrap {
-    padding: 0 0 60px 0;
-  }
-  .skill-settings {
-    border: 1px white solid;
-    border-radius: 2px;
-    padding: 18px 28px;
-    font-size: 17px;
-    margin: 20px 14px;
-    text-transform: capitalize;
   }
   .features {
     display: grid;
