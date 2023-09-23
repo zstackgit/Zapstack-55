@@ -3,7 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   scroll-behavior: smooth;
 }
 
@@ -32,6 +32,7 @@ nav {
   font-weight: 500;
   box-sizing: border-box;
   width: 100%;
+  max-width: 1440px;
 }
 
 .remove-link-styling {
@@ -154,6 +155,7 @@ nav {
   flex-direction: row;
   height: auto;
   width: 100%;
+  max-width: 1440px;
   background-color: white;
 }
 
@@ -204,6 +206,15 @@ nav {
 
 .page-btn:hover {
   cursor: pointer;
+}
+
+.skills-features-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  width: 100%;
 }
 
 .skill-chips-section {
@@ -293,6 +304,7 @@ nav {
 
 .features-content {
   height: auto;
+  text-align: center;
   color: white;
   padding: 30px 0;
 }
@@ -315,7 +327,7 @@ nav {
   color: white;
 }
 
-.trust-section {
+.government-section {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 500px auto;
@@ -323,11 +335,12 @@ nav {
   min-height: auto;
   height: auto;
   min-height: 700px;
+  max-width: 1440px;
   width: 100%;
   background-color: white;
 }
 
-.trust-image-wrap {
+.government-image-wrap {
   grid-area: skill2imagewrap;
   background-size: cover;
   background-position: center;
@@ -340,29 +353,29 @@ nav {
   background-color: black;
 }
 
-.trust-sidebar {
+.government-sidebar {
   grid-area: skill2Sidebar;
   padding: 40px;
   color: black;
   text-align: center;
 }
-.trust-sidebar h4 {
+.government-sidebar h4 {
   font-size: 26px;
   font-weight: 500;
   line-height: 1.4;
   margin: 0 0 32px 0;
   text-transform: capitalize;
 }
-.trust-sidebar p {
+.government-sidebar p {
   font-size: 15px;
   line-height: 1.6;
   margin: 0 0 32px 0;
 }
 
-.contact-container {
+.contact {
   background-color: white;
-  padding: 0 40px;
-  min-height: 300px;
+  padding: 60px 40px;
+  min-height: 240px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -370,13 +383,13 @@ nav {
   text-align: center;
   width: 100%;
 }
-.contact-container h4 {
+.contact h4 {
   font-size: 26px;
   font-weight: 500;
   margin: 0 0 32px 0;
   padding: 0;
 }
-.contact-container p {
+.contact p {
   font-size: 15px;
   font-weight: 400;
   margin: 0 0 32px 0;
@@ -524,51 +537,58 @@ footer .country-location {
   }
   .content-section {
     display: grid;
-    grid-template-columns: 400px 1fr 1fr;
+    grid-template-columns: 450px 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "introContent introImage introImage";
     flex-direction: row;
-    height: 800px;
+    height: 650px;
     width: 100%;
+  }
+  .content-section .content {
+    padding: 80px 50px 80px 40px;
   }
   .features {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "featuresImage featuresImage featuresSidebar";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "featuresImage" "featuresSidebar";
     height: auto;
-    padding: 110px 60px 200px 60px;
-    width: 100%;
+    width: 700px;
     justify-content: flex-start;
-    max-width: 100%;
+    max-width: 1440px;
+    padding: 60px 0 180px 0;
+    -moz-column-gap: 90px;
+         column-gap: 90px;
   }
   .features-wrap {
     grid-area: featuresSidebar;
-    width: 400px;
+    width: 100%;
+    height: auto;
   }
   .features-image {
     grid-area: featuresImage;
-    height: 400px;
+    height: 500px;
     width: 100%;
-    background-size: clamp(300px, 80%, 800px);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(./images/sigmund-Fa9b57hffnM-unsplash\ \(1\).jpg);
     filter: brightness(60%);
     background-color: rgb(0, 0, 0);
   }
-  .trust-section {
+  .government-section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 450px;
     grid-template-rows: auto;
     grid-template-areas: "skill2imagewrap skill2imagewrap skill2Sidebar";
     min-height: auto;
     height: auto;
-    min-height: 750px;
+    min-height: 650px;
     width: 100%;
+    margin: 0 100px 0 100px;
     background-color: white;
   }
-  .trust-image-wrap {
+  .government-image-wrap {
     grid-area: skill2imagewrap;
     background-size: cover;
     background-position: center;
@@ -578,25 +598,23 @@ footer .country-location {
   .light-bg {
     background-color: black;
   }
-  .trust-sidebar {
+  .government-sidebar {
     grid-area: skill2Sidebar;
     color: black;
-    padding: 50px 40px;
+    padding: 80px 50px 80px 40px;
+    text-align: left;
   }
-  .trust-sidebar h4 {
+  .government-sidebar h4 {
     font-size: 26px;
     font-weight: 500;
     line-height: 1.4;
     margin: 0 0 32px 0;
     text-transform: capitalize;
   }
-  .trust-sidebar p {
+  .government-sidebar p {
     font-size: 15px;
     line-height: 1.6;
     margin: 0 0 32px 0;
-  }
-  .contact-settings {
-    padding: 40px 0;
   }
   footer {
     padding: 20px 60px;
