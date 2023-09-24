@@ -261,7 +261,7 @@ nav{
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  padding: 180px 0;
+  padding: 90px 0 180px 0;
   background-color: rgb(0, 0, 0);
   color: white;
   
@@ -333,7 +333,7 @@ nav{
 .capabilities{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 400px auto 400px auto 400px auto;
+  grid-template-rows: 260px auto 260px auto 260px auto;
   grid-template-areas: 
   "uxImage"
   "uxContent"
@@ -341,47 +341,38 @@ nav{
   "uiContent"
   "devImage"
   "devContent"; 
-  color: white;
   height: auto;
   padding: 120px 40px 120px 40px;
   box-sizing: border-box;
   width: 100%;
   text-align: center;
 
-  .ux-image{
-    grid-area: uxImage;
-    height: 400px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-image: url(./images/sigmund-Fa9b57hffnM-unsplash\ \(1\).jpg);
-    filter: brightness(60%);
-    background-color: rgb(107, 107, 107);
-  }
 
   .ux-content{
     grid-area: uxContent;
     display: flex;
     flex-direction: column;
-    margin-bottom: 120px;
+    margin-bottom: 70px;
+    height: fit-content;
   }
+
   .ui-content{
     grid-area: uiContent;
     display: flex;
     flex-direction: column;
-    margin-bottom: 120px;
+    margin-bottom: 70px;
   }
   .dev-content{
     grid-area: devContent;
     display: flex;
     flex-direction: column;
-    margin-bottom: 120px;
+    margin-bottom: 70px;
   }
 
 
   .ux-image{
     grid-area: uxImage;
-    height: 400px;
+    height: auto;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -392,7 +383,7 @@ nav{
 
   .ui-image{
     grid-area: uiImage;
-    height: 400px;
+    height: auto;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -403,7 +394,7 @@ nav{
 
   .dev-image{
     grid-area: devImage;
-    height: 400px;
+    height: auto;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -417,14 +408,16 @@ nav{
     font-size: 22px;
     font-weight: 400;
     line-height: 1.4;
-    margin: 0 0 18px 0;
+    margin: 32px 0 24px 0;
     text-transform: capitalize;
+    color: white;
   }
 
   p{
     font-size: 15px;
     line-height: 1.6;
     margin: 0 0 32px 0;
+    color: white;
   }
 
   .dark-btn{
@@ -749,6 +742,14 @@ nav{
 
 
 
+// skills section
+
+.skills-section{
+  padding: 180px 0 180px 0;
+}
+
+
+
 
 
 // capabilities
@@ -766,7 +767,7 @@ nav{
   height: auto;
   width: 100%;
   column-gap: 50px;
-  row-gap: 80px;
+  row-gap: 55px;
   max-width: 900px;
   margin: 90px 0 200px 0;
   text-align: left;
