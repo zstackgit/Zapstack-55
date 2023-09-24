@@ -445,7 +445,7 @@ footer p {
   text-align: center;
   font-size: 15.5px;
   letter-spacing: 2px;
-  margin: 0 0 20px 0;
+  margin: 0;
   font-weight: 600;
   text-transform: uppercase;
   color: black;
@@ -456,7 +456,7 @@ footer p {
 footer ul {
   list-style-type: none;
   padding: 0;
-  margin: 0 0 20px 0;
+  margin: 12px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -466,7 +466,7 @@ footer ul {
 }
 footer ul a {
   text-decoration: none;
-  margin: 5px 15px 10px 15px;
+  margin: 0 15px 0 15px;
 }
 footer ul li {
   display: flex;
@@ -478,7 +478,7 @@ footer ul li {
   font-size: 12.5px;
   font-weight: 500;
   color: rgb(60, 60, 60);
-  margin: 0 0 5px 0;
+  margin: 8px 0;
 }
 footer .copyright {
   width: 100%;
