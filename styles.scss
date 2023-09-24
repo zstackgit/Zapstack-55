@@ -197,7 +197,7 @@ nav{
 
 .content-image1{
   background-image: url(./images/mobile-robin-worrall-FPt10LXK0cg-unsplash.jpg);
-  filter: brightness(60%);
+  filter: brightness(95%) saturate(105%) contrast(110%);
 }
 
 .future-content{
@@ -308,6 +308,7 @@ nav{
     height: 500px;
     width: 100%;
     background-image: url(./images/sigmund-Fa9b57hffnM-unsplash\ \(1\).jpg);
+    filter: contrast(115%);
   }
 
 }
@@ -362,19 +363,19 @@ nav{
     grid-area: uxContent;
     display: flex;
     flex-direction: column;
-    margin-bottom: 110px;
+    margin-bottom: 120px;
   }
   .ui-content{
     grid-area: uiContent;
     display: flex;
     flex-direction: column;
-    margin-bottom: 110px;
+    margin-bottom: 120px;
   }
   .dev-content{
     grid-area: devContent;
     display: flex;
     flex-direction: column;
-    margin-bottom: 110px;
+    margin-bottom: 120px;
   }
 
 
@@ -384,8 +385,8 @@ nav{
     width: 100%;
     background-size: cover;
     background-position: center;
-    background-image: url(./images/sigmund-Fa9b57hffnM-unsplash\ \(1\).jpg);
-    filter: brightness(60%);
+    background-image: url(./images/jason-goodman-Oalh2MojUuk-unsplash\ \(1\).jpg);
+    filter: brightness(100%);
     background-color: rgb(107, 107, 107);
   }
 
@@ -395,8 +396,8 @@ nav{
     width: 100%;
     background-size: cover;
     background-position: center;
-    background-image: url(./images/sigmund-Fa9b57hffnM-unsplash\ \(1\).jpg);
-    filter: brightness(60%);
+    background-image: url(./images/alec-cooks-YNnSOFQ66Zw-unsplash.jpg);
+    filter: brightness(100%);
     background-color: rgb(107, 107, 107);
   }
 
@@ -406,8 +407,8 @@ nav{
     width: 100%;
     background-size: cover;
     background-position: center;
-    background-image: url(./images/sigmund-Fa9b57hffnM-unsplash\ \(1\).jpg);
-    filter: brightness(60%);
+    background-image: url(./images/sigmund-Im_cQ6hQo10-unsplash\ \(1\).jpg);
+    filter: brightness(100%);
     background-color: rgb(107, 107, 107);
   }
 
@@ -469,7 +470,7 @@ nav{
   background-position: center;
   background-color: rgb(107, 107, 107);
   background-image: url(./images/dylan-gillis-KdeqA3aTnBY-unsplash\ \(3\).jpg);
-  filter: brightness(95%) saturate(110%) contrast(108%);
+  filter: brightness(100%) saturate(105%) contrast(110%);
 }
 
 .light-bg{
@@ -767,7 +768,7 @@ nav{
   column-gap: 50px;
   row-gap: 80px;
   max-width: 900px;
-  margin: 90px 0 240px 0;
+  margin: 90px 0 200px 0;
   text-align: left;
 
 
