@@ -172,21 +172,20 @@ nav {
   filter: brightness(60%);
 }
 
-.content {
+.future-content {
   grid-area: introContent;
   height: auto;
   padding: 80px 30px;
-  background-color: white;
   color: black;
 }
-.content h4 {
+.future-content h4 {
   font-size: 26px;
   font-weight: 500;
   line-height: 1.4;
   margin: 0 0 32px 0;
   text-transform: capitalize;
 }
-.content p {
+.future-content p {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.8;
@@ -208,16 +207,17 @@ nav {
   cursor: pointer;
 }
 
-.skills-features-wrapper {
+.skills-capabilities-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: black;
   width: 100%;
+  max-width: 1440px;
 }
 
-.skill-chips-section {
+.skills-section {
   width: 100%;
   height: auto;
   display: flex;
@@ -225,23 +225,29 @@ nav {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  padding: 120px 30px;
+  padding: 180px 0;
   background-color: rgb(0, 0, 0);
   color: white;
 }
-.skill-chips-section .skill-content-image-wrapper {
+.skills-section .skill-content-image-wrapper {
   display: flex;
   flex-direction: column;
-  max-width: 840px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
 }
-.skill-chips-section .content-wrapper {
+.skills-section .content-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 720px;
+  padding: 0 30px;
+  margin-bottom: 3cqh;
 }
-.skill-chips-section .content-wrapper h4 {
+.skills-section .content-wrapper h4 {
   font-size: 26px;
   font-weight: 500;
   line-height: 1.4;
@@ -249,50 +255,44 @@ nav {
   text-transform: capitalize;
   text-align: center;
 }
-.skill-chips-section .content-wrapper p {
+.skills-section .content-wrapper p {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.8;
   margin: 0 0 32px 0;
   text-align: center;
 }
-.skill-chips-section .skill-chip-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.skill-chips-section .skill-chip-wrapper .skills-chip {
-  border: 1px white solid;
-  padding: 14px 24px;
-  font-size: 17px;
-  font-weight: 500;
-  margin: 10px 10px;
-  text-transform: capitalize;
+.skills-section .skills-image {
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 100%;
+  background-image: url(./images/sigmund-Fa9b57hffnM-unsplash\ \(1\).jpg);
 }
 
-.features {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 400px auto;
-  grid-template-areas: "featuresImage" "featuresSidebar";
-  height: auto;
-  padding: 110px 40px 200px 40px;
+.skills-capabilites-combined-wrapper {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: black;
+  width: 100%;
+  background-color: black;
+}
+
+.capabilities {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 400px auto 400px auto 400px auto;
+  grid-template-areas: "uxImage" "uxContent" "uiImage" "uiContent" "devImage" "devContent";
+  color: white;
+  height: auto;
+  padding: 120px 40px 120px 40px;
   box-sizing: border-box;
-  max-width: 100%;
+  width: 100%;
+  text-align: center;
 }
-
-.features-wrap {
-  grid-area: featuresSidebar;
-}
-
-.features-image {
-  grid-area: featuresImage;
+.capabilities .ux-image {
+  grid-area: uxImage;
   height: 400px;
   width: 100%;
   background-size: cover;
@@ -301,27 +301,67 @@ nav {
   filter: brightness(60%);
   background-color: rgb(107, 107, 107);
 }
-
-.features-content {
-  height: auto;
-  text-align: center;
-  color: white;
-  padding: 30px 0;
+.capabilities .ux-content {
+  grid-area: uxContent;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 110px;
 }
-.features-content h4 {
-  font-size: 26px;
-  font-weight: 500;
+.capabilities .ui-content {
+  grid-area: uiContent;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 110px;
+}
+.capabilities .dev-content {
+  grid-area: devContent;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 110px;
+}
+.capabilities .ux-image {
+  grid-area: uxImage;
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./images/sigmund-Fa9b57hffnM-unsplash\ \(1\).jpg);
+  filter: brightness(60%);
+  background-color: rgb(107, 107, 107);
+}
+.capabilities .ui-image {
+  grid-area: uiImage;
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./images/sigmund-Fa9b57hffnM-unsplash\ \(1\).jpg);
+  filter: brightness(60%);
+  background-color: rgb(107, 107, 107);
+}
+.capabilities .dev-image {
+  grid-area: devImage;
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./images/sigmund-Fa9b57hffnM-unsplash\ \(1\).jpg);
+  filter: brightness(60%);
+  background-color: rgb(107, 107, 107);
+}
+.capabilities h3 {
+  font-size: 22px;
+  font-weight: 400;
   line-height: 1.4;
-  margin: 0 0 32px 0;
+  margin: 0 0 18px 0;
   text-transform: capitalize;
 }
-.features-content p {
+.capabilities p {
   font-size: 15px;
   line-height: 1.6;
   margin: 0 0 32px 0;
 }
-
-.dark-btn {
+.capabilities .dark-btn {
   border: 1px solid white;
   background-color: black;
   color: white;
@@ -407,7 +447,7 @@ footer {
   width: 100%;
   box-sizing: border-box;
 }
-footer h4 {
+footer p {
   text-align: center;
   font-size: 15.5px;
   letter-spacing: 2px;
@@ -482,7 +522,7 @@ footer .country-location {
     position: absolute;
     width: 100%;
     text-align: center;
-    margin-top: 280px;
+    margin-top: 310px;
     font-size: 44px;
     font-weight: 500;
     letter-spacing: 7px;
@@ -516,7 +556,7 @@ footer .country-location {
     display: flex;
     flex-direction: row;
     padding: 70px 60px;
-    color: white;
+    color: black;
     height: auto;
     -moz-column-gap: 80px;
          column-gap: 80px;
@@ -537,53 +577,53 @@ footer .country-location {
   }
   .content-section {
     display: grid;
-    grid-template-columns: 450px 1fr 1fr;
+    grid-template-columns: 440px 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "introContent introImage introImage";
     flex-direction: row;
-    height: 650px;
+    min-height: 800px;
     width: 100%;
   }
-  .content-section .content {
-    padding: 80px 50px 80px 40px;
+  .content-section .future-content {
+    padding: 90px 50px 90px 40px;
   }
-  .features {
+  .capabilities {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: "featuresImage" "featuresSidebar";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "uxImage uxImage uxImage uxImage uxImage uxContent uxContent uxContent uxContent" "uiContent uiContent uiContent uiContent uiImage uiImage uiImage uiImage uiImage" "devImage devImage devImage devImage devImage devContent devContent devContent devContent";
+    color: white;
+    padding: 0;
+    box-sizing: border-box;
     height: auto;
-    width: 700px;
-    justify-content: flex-start;
-    max-width: 1440px;
-    padding: 60px 0 180px 0;
-    -moz-column-gap: 90px;
-         column-gap: 90px;
-  }
-  .features-wrap {
-    grid-area: featuresSidebar;
     width: 100%;
-    height: auto;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+    row-gap: 80px;
+    max-width: 900px;
+    margin: 90px 0 240px 0;
+    text-align: left;
   }
-  .features-image {
-    grid-area: featuresImage;
-    height: 500px;
-    width: 100%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(./images/sigmund-Fa9b57hffnM-unsplash\ \(1\).jpg);
-    filter: brightness(60%);
-    background-color: rgb(0, 0, 0);
+  .capabilities .ux-image {
+    grid-area: uxImage;
+    height: 100%;
+  }
+  .capabilities .ui-image {
+    grid-area: uiImage;
+    height: 100%;
+  }
+  .capabilities .dev-image {
+    grid-area: devImage;
+    height: 100%;
   }
   .government-section {
     display: grid;
-    grid-template-columns: 1fr 1fr 450px;
+    grid-template-columns: 1fr 1fr 440px;
     grid-template-rows: auto;
     grid-template-areas: "skill2imagewrap skill2imagewrap skill2Sidebar";
     min-height: auto;
     height: auto;
-    min-height: 650px;
+    min-height: 800px;
     width: 100%;
     margin: 0 100px 0 100px;
     background-color: white;
@@ -601,7 +641,7 @@ footer .country-location {
   .government-sidebar {
     grid-area: skill2Sidebar;
     color: black;
-    padding: 80px 50px 80px 40px;
+    padding: 110px 40px 110px 50px;
     text-align: left;
   }
   .government-sidebar h4 {
@@ -615,6 +655,11 @@ footer .country-location {
     font-size: 15px;
     line-height: 1.6;
     margin: 0 0 32px 0;
+  }
+  .contact {
+    background-color: white;
+    padding: 70px 40px;
+    min-height: 240px;
   }
   footer {
     padding: 20px 60px;
@@ -631,11 +676,11 @@ footer .country-location {
     align-items: center;
     width: 100%;
   }
-  footer h4 {
+  footer p {
     width: 100%;
     text-align: left;
-    font-size: 15.5px;
-    letter-spacing: 2px;
+    font-size: 14.5px;
+    letter-spacing: 1.5px;
     margin: 0 12px 0 0;
     font-weight: 600;
     text-transform: uppercase;
@@ -671,7 +716,7 @@ footer .country-location {
     display: flex;
     flex-direction: row;
     width: 100%;
-    padding: 15px 0;
+    padding: 10px 0 10px 0;
   }
   footer .copyright {
     text-align: left;
