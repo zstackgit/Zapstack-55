@@ -20,6 +20,10 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.load-hidden {
+  visibility: hidden;
+}
+
 nav {
   display: flex;
   background-color: white;
@@ -177,9 +181,10 @@ nav {
   height: auto;
   padding: 80px 30px;
   color: black;
+  text-align: center;
 }
 .future-content h4 {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 500;
   line-height: 1.4;
   margin: 0 0 32px 0;
@@ -193,8 +198,8 @@ nav {
 }
 
 .page-btn {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 13.5px;
+  font-weight: 500;
   padding: 8px 24px;
   border: 1.5px solid black;
   color: black;
@@ -408,8 +413,7 @@ nav {
 
 .contact {
   background-color: white;
-  padding: 60px 40px;
-  min-height: 240px;
+  min-height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -428,6 +432,9 @@ nav {
   font-weight: 400;
   margin: 0 0 32px 0;
   padding: 0;
+}
+.contact .skills-2-sidebar {
+  padding: 40px;
 }
 
 footer {
@@ -580,6 +587,7 @@ footer .country-location {
   }
   .content-section .future-content {
     padding: 90px 50px 90px 40px;
+    text-align: left;
   }
   .skills-section {
     padding: 180px 0 180px 0;
@@ -655,8 +663,10 @@ footer .country-location {
   }
   .contact {
     background-color: white;
-    padding: 70px 40px;
-    min-height: 240px;
+    min-height: 330px;
+  }
+  .contact .skills-2-sidebar {
+    padding: 40px;
   }
   footer {
     padding: 20px 60px;
