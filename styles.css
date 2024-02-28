@@ -95,8 +95,20 @@ nav {
   margin-right: 20px;
   text-transform: uppercase;
   text-decoration: none;
+  animation: floatUp 1.4s ease-out forwards;
 }
 
+/* Keyframes for floating-up animation */
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80px); /* Move the container up to its original position */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Move the container up to its original position */
+  }
+}
 .section-hero {
   position: relative;
   overflow: hidden;
@@ -519,13 +531,13 @@ footer .country-location {
     position: absolute;
     width: 100%;
     text-align: center;
-    margin-top: 310px;
-    font-size: 44px;
+    margin-top: 260px;
+    font-size: 64px;
     font-weight: 500;
-    letter-spacing: 7px;
+    letter-spacing: 3px;
     color: white;
     margin-right: 20px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-decoration: none;
   }
   .hero-img {
