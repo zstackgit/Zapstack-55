@@ -118,7 +118,7 @@ nav{
   height: 100%;
   width: 100%;
   background-size: cover;
-  filter: brightness(90%) saturate(110%);
+  filter: brightness(92%) saturate(115%);
   background-image: url(./images/new-urlaubstracker-dW8dOC8r7O4-unsplash.jpg);
   background-position: 0% 100%;
 }
@@ -139,7 +139,7 @@ nav{
 .new-hero-title{
   width: 100%;
   font-family: "Work Sans", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0px;
   font-size: 44px;
   text-align: left;
@@ -152,6 +152,10 @@ nav{
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+
+  a{
+    text-decoration: none;
+  }
 }
 
 .new-hero-button{
@@ -171,7 +175,6 @@ nav{
   background-color: rgba(0, 0, 0, 0.413);
   cursor: pointer;
 }
-
 
 
 // -----  Animation  ------ //
@@ -720,14 +723,13 @@ nav{
   width: 100%;
   font-weight: 300;
   letter-spacing: 0px;
-  font-size: 54px;
+  font-size: 52px;
 }
 
 .new-hero-img{
   background-size: 150%;
-  filter: brightness(80%) saturate(110%);
   background-image: url(./images/new-urlaubstracker-dW8dOC8r7O4-unsplash.jpg);
-  background-position: 50% 10%;
+  background-position: 50% 4%;
 }
 
 .new-hero-text-group{
