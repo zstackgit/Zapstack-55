@@ -41,7 +41,7 @@ nav {
 }
 
 .nav-logo-brand {
-  font-size: 21px;
+  font-size: 22px;
   font-weight: 650;
   margin-right: 20px;
   letter-spacing: -0.25px;
@@ -110,7 +110,7 @@ nav {
   position: absolute;
   width: 100%;
   height: auto;
-  margin-top: 120px;
+  margin-top: 136px;
   padding: 0 24px;
   z-index: 5;
   animation: floatUp 1.4s ease-out forwards;
@@ -125,11 +125,12 @@ nav {
   text-align: left;
   color: white;
   text-decoration: none;
+  margin-bottom: 48px;
 }
 
 .new-hero-button-group {
   display: flex;
-  gap: 8px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
@@ -140,12 +141,13 @@ nav {
   width: 100%;
   min-width: 300px;
   max-width: 280px;
-  border: 2px solid white;
+  border: 1.5px solid white;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
   font-weight: 100;
   border-radius: 4px;
-  padding: 8px 14px;
+  padding: 9px 14px;
   background-color: rgba(0, 0, 0, 0.413);
   cursor: pointer;
 }
@@ -561,7 +563,7 @@ footer .country-location {
     width: 100%;
     font-weight: 300;
     letter-spacing: 0px;
-    font-size: 64px;
+    font-size: 54px;
   }
   .new-hero-img {
     background-size: 150%;
@@ -570,7 +572,7 @@ footer .country-location {
     background-position: 50% 10%;
   }
   .new-hero-text-group {
-    margin-top: 70px;
+    margin-top: 80px;
     padding: 0 40px;
   }
   .new-hero-button-group {
