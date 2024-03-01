@@ -3,7 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(80, 80, 80);
   scroll-behavior: smooth;
 }
 
@@ -38,17 +38,16 @@ nav{
   max-width: 1440px;
 }
 
-  .remove-link-styling{
-    text-decoration: none;
-    color: black;
-  }
+.remove-link-styling{
+  text-decoration: none;
+  color: black;
+}
 
 .nav-logo-brand {
-    font-size: 18.5px;
-    letter-spacing: 1.8px;
+    font-size: 21px;
+    font-weight: 650;
     margin-right: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
+    letter-spacing: -.25px;
     color: black;
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
@@ -65,24 +64,35 @@ nav{
 }
 
 .navLink{
-  font-size: 13.5px;
+  font-size: 14px;
   font-weight: 500;
-  color:  rgb(60, 60, 60);
-  margin: 0 16px;
+  color:  rgb(104, 104, 104);
+  margin: 0 12px;
   a{
     text-decoration: none;
   }
 }
 
-.nav-button{
-  padding: 7px 12.5px;
+
+
+
+
+//--------------- new-nav-section --------------------//
+//--------------- new-nav-section --------------------//
+//--------------- new-nav-section --------------------//
+
+.new-nav-button {
+  display: flex;
+  width: auto;
+  text-wrap: nowrap;
+  padding: 6px 12px;
   background-color: rgb(255, 255, 255);
   color: black;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   font-family: "Open Sans", sans-serif;
   border: 1.5px solid black;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 
@@ -90,25 +100,81 @@ nav{
 
 
 
-// hero
 
-.hero-title{
-  z-index: 2;
+//--------------- new-hero-section --------------------//
+//--------------- new-hero-section --------------------//
+//--------------- new-hero-section --------------------//
+
+.new-section-hero{
+  position: relative;
+  overflow: hidden;
+  height: 800px;
+  width: 100%;
+  background-color: black;
+  z-index: 1;
+}
+
+.new-hero-img{
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  filter: brightness(90%) saturate(110%);
+  background-image: url(./images/new-urlaubstracker-dW8dOC8r7O4-unsplash.jpg);
+  background-position: 0% 100%;
+}
+
+.new-hero-text-group{
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
   position: absolute;
   width: 100%;
-  text-align: center;
-  margin-top: 260px;
-  font-size: 35px;
-  font-weight: 500;
-  letter-spacing: 3px;
-  color: white;
-  margin-right: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-
+  height: auto;
+  margin-top: 120px;
+  padding: 0 24px;
+  z-index: 5;
   animation: floatUp 1.4s ease-out forwards;
 }
 
+.new-hero-title{
+  width: 100%;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0px;
+  font-size: 44px;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+
+
+.new-hero-button-group{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.new-hero-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  min-width: 300px;
+  max-width: 280px;
+  border: 2px solid white;
+  color: white;
+  font-size: 16px;
+  font-weight: 100;
+  border-radius: 4px;
+  padding: 8px 14px;
+  background-color: rgba(0, 0, 0, 0.413);
+  cursor: pointer;
+}
+
+
+
+// -----  Animation  ------ //
+// -----  Animation  ------ //
 
 /* Keyframes for floating-up animation */
 @keyframes floatUp {
@@ -123,23 +189,17 @@ nav{
   }
 }
 
-.section-hero{
-  position: relative;
-  overflow: hidden;
-  height: 700px;
-  width: 100%;
-}
 
-.hero-img{
-  position: relative;
-  z-index: 1;
-  height: 100%;
-  width: 145%;
-  background-size: cover;
-  filter: brightness(50%) saturate(90%) sepia(44%);
-  background-image: url(./images/christian-H9cbCNvjsjo-unsplash.jpg);
-  background-position: 50% 100%;
-}
+
+
+//--------------- new-hero-section --------------------//
+//--------------- new-hero-section --------------------//
+//--------------- new-hero-section --------------------//
+//--------------- new-hero-section --------------------//
+//--------------- new-hero-section --------------------//
+//--------------- new-hero-section --------------------//
+//--------------- new-hero-section --------------------//
+
 
 
 
@@ -239,8 +299,9 @@ nav{
 .page-btn{
   font-size: 13.5px;
   font-weight: 500;
-  padding: 8px 24px;
-  border: 1.5px solid black;
+  padding: 6px 20px;
+  border: 2px solid black;
+  border-radius: 3px;
   color: black;
   font-family: "Open Sans", sans-serif;
   background-color: white;
@@ -558,14 +619,14 @@ footer{
   width: 100%;
   box-sizing: border-box;
 
+
   p{
+    width: 100%;
     text-align: center;
-    font-size: 15.5px;
-    letter-spacing: 2px;
+    font-size: 18px;
     margin: 0;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: black;
+    font-weight: 700;
+    color: rgb(44, 44, 44);
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
     color: rgb(54, 54, 54);
@@ -574,7 +635,7 @@ footer{
   ul{
     list-style-type: none;
     padding: 0;
-    margin: 12px 0;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -600,8 +661,6 @@ footer{
     color:  rgb(60, 60, 60);
     margin: 8px 0;
   }
-
-
 
   .copyright{
     width: 100%;
@@ -639,8 +698,7 @@ nav{
 }
 
 .nav-logo-brand {
-  font-size: 16.5px;
-  letter-spacing: 2px;
+  font-size: 21px;
   width: auto;
 }
 
@@ -653,23 +711,62 @@ nav{
 
 
 
+//--------------- new-hero-section --------------------//
+//--------------- new-hero-section --------------------//
+//--------------- new-hero-section --------------------//
+
+.new-hero-title{
+  width: 100%;
+  font-weight: 300;
+  letter-spacing: 0px;
+  font-size: 64px;
+}
+
+.new-hero-img{
+  background-size: 150%;
+  filter: brightness(80%) saturate(110%);
+  background-image: url(./images/new-urlaubstracker-dW8dOC8r7O4-unsplash.jpg);
+  background-position: 50% 10%;
+}
+
+.new-hero-text-group{
+  margin-top: 70px;
+  padding: 0 40px;
+}
+
+.new-hero-button-group{
+  gap: 12px;
+}
+
+.new-hero-button{
+  width: 100%;
+  min-width: 300px;
+  max-width: fit-content;
+  font-size: 17px;
+  border: 1px solid white;
+}
+
+
+
+
+
+
+
 // hero
 
 .section-hero{
   height: 760px;
+  padding: 0 40px;
 }
 
 .hero-title{
   z-index: 2;
   position: absolute;
+  margin-top: 160px;
   width: 100%;
-  text-align: center;
-  margin-top: 260px;
-  font-size: 64px;
-  font-weight: 500;
-  letter-spacing: 3px;
+  font-size: 60px;
+  letter-spacing: 0;
   color: white;
-  margin-right: 20px;
   text-transform: capitalize;
   text-decoration: none;
 }
@@ -878,7 +975,7 @@ nav{
 // footer
 
   footer{
-    padding: 20px 60px;
+    padding: 24px 40px;
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -892,24 +989,13 @@ nav{
       align-items: center;
       width: 100%;
     }
-
-    p{
-      width: 100%;
-      text-align: left;
-      font-size: 14.5px;
-      letter-spacing: 1.5px;
-      margin: 0 12px 0 0;
-      font-weight: 600;
-      text-transform: uppercase;
-      color: black;
-      text-decoration: none;
-      font-family: "Open Sans", sans-serif;
-      color: rgb(54, 54, 54);
-    }
   
+    p{
+      text-align: left;
+    }
+
     ul{
       padding: 0;
-      margin: 0 0 0 0;
       flex-direction: row;
       justify-content: flex-start;
       text-align: left;
