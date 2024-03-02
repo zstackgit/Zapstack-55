@@ -25,17 +25,22 @@ body {
 
 nav{
   display: flex;
-  background-color: white;
   flex-direction: row;
   position: sticky;
   align-items: center;
   height: auto;
-  padding: 18px 20px;
-  font-size: 15px;
+  background-color: white;
+  padding: 0 20px;
+  height: 54px;
   font-weight: 500;
   box-sizing: border-box;
   width: 100%;
   max-width: 1440px;
+
+  a{
+    text-decoration: none;
+    text-wrap: nowrap;
+  }
 }
 
 .remove-link-styling{
@@ -43,36 +48,49 @@ nav{
   color: black;
 }
 
+
+.navLinkWrapper{
+  justify-content: flex-start;
+  a{
+    text-decoration: none;
+  }
+  width: 100%;
+}
+
+.nav-link-group-wrapper{
+  display: none;
+}
+
 .nav-logo-brand {
     font-size: 22px;
     font-weight: 650;
-    margin-right: 20px;
+    line-height: 1;
+    margin-right: 32px;
     letter-spacing: -.25px;
     color: black;
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
-    width: 100%;
+    width: fit-content;
+    display: flex;
 }
 
-.navLinkWrapper{
-  display: none;
-  justify-content: flex-start;
-  flex-direction: row;
-  a{
-    text-decoration: none;
-  }
-}
 
 .navLink{
-  font-size: 14px;
+  font-size: 13px;
+  line-height: 1;
   font-weight: 500;
   color:  rgb(104, 104, 104);
-  margin: 0 12px;
+  margin: 0 15px;
+  word-wrap: none;
   a{
     text-decoration: none;
   }
 }
 
+
+.NavContactLink{
+  margin: 0;
+}
 
 
 
@@ -92,7 +110,7 @@ nav{
   font-size: 14px;
   font-weight: 600;
   font-family: "Open Sans", sans-serif;
-  border: 1.5px solid black;
+  border: none;
   border-radius: 3px;
 }
 
@@ -109,7 +127,7 @@ nav{
 .new-section-hero{
   position: relative;
   overflow: hidden;
-  height: 800px;
+  height: calc(100vh - 24px);
   width: 100%;
   background-color: black;
   z-index: 1;
@@ -166,20 +184,41 @@ nav{
   width: 100%;
   min-width: 300px;
   max-width: 260px;
-  border: 1px solid white;
-  color: white;
-  font-size: 18px;
+  font-size: 17px;
   font-family: "Open Sans", sans-serif;
-  font-weight: 100;
-  border-radius: 4px;
-  padding: 8px 16px;
-  background-color: rgba(0, 0, 0, 0.38);
+  border-radius: 5px;
+  font-weight: 500;
+  padding: 10px 16px;
   cursor: pointer;
 }
 
-.new-hero-button:hover{
-  background-color: rgba(0, 0, 0, 0.486);
+.hero-button-primary{
+  background-color: rgba(255, 255, 255, 0.91);
+  color: black;
+  border: none;
 }
+
+.hero-button-secondary{
+  background-color: rgba(0, 0, 0, 0.419);
+  color: white;
+  border: none;
+}
+
+
+// .hero-button-primary:hover{
+//   border: 1px solid white;
+//   animation: borderShow 100ms cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+// }
+
+// @keyframes borderShow {
+//   0%{
+//     border: 1px solid white;  
+//   }
+//   100%{
+//     border: 2px solid black;  
+//   }
+// }
+
 
 // -----  Animation  ------ //
 // -----  Animation  ------ //
@@ -701,8 +740,8 @@ footer{
 // nav
 
 nav{
-  height: auto;
-  padding: 8px 40px;
+  height: 54px;
+  padding: 0 40px;
 }
 
 .nav-logo-brand {
@@ -712,11 +751,12 @@ nav{
 
 .navLinkWrapper{
   display: flex;
-  flex-direction: row;
-  margin: 14px 18px;
-  width: 100%;
+  align-items: center;
 }
 
+.nav-link-group-wrapper{
+  display: flex;
+}
 
 
 //--------------- new-hero-section --------------------//
@@ -728,6 +768,8 @@ nav{
   font-weight: 300;
   letter-spacing: 0px;
   font-size: 54px;
+  line-height: 1.1;
+  margin: 40px 0 40px 0;
 }
 
 .new-hero-img{
@@ -749,7 +791,7 @@ nav{
   width: 100%;
   min-width: 280px;
   max-width: fit-content;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 
