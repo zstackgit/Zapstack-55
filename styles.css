@@ -74,8 +74,10 @@ nav {
   display: flex;
   width: -moz-fit-content;
   width: fit-content;
+  min-width: 100px;
+  justify-content: center;
   text-wrap: nowrap;
-  padding: 6px 12px;
+  padding: 6px 0;
   background-color: rgb(255, 255, 255);
   color: black;
   font-size: 14px;
@@ -98,7 +100,7 @@ nav {
   height: 100%;
   width: 100%;
   background-size: cover;
-  filter: brightness(92%) saturate(115%);
+  filter: brightness(92%) saturate(120%);
   background-image: url(./images/new-urlaubstracker-dW8dOC8r7O4-unsplash.jpg);
   background-position: 0% 100%;
 }
@@ -119,13 +121,13 @@ nav {
 .new-hero-title {
   width: 100%;
   font-family: "Work Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0px;
-  font-size: 44px;
+  font-size: 46px;
   text-align: left;
   color: white;
   text-decoration: none;
-  margin-bottom: 12px;
+  margin-bottom: 40px;
   max-width: 650px;
 }
 
@@ -144,16 +146,20 @@ nav {
   justify-content: center;
   width: 100%;
   min-width: 300px;
-  max-width: 280px;
-  border: 1.5px solid white;
+  max-width: 260px;
+  border: 1px solid white;
   color: white;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   border-radius: 4px;
-  padding: 9px 14px;
-  background-color: rgba(0, 0, 0, 0.413);
+  padding: 8px 16px;
+  background-color: rgba(0, 0, 0, 0.38);
   cursor: pointer;
+}
+
+.new-hero-button:hover {
+  background-color: rgba(0, 0, 0, 0.486);
 }
 
 /* Keyframes for floating-up animation */
@@ -567,12 +573,12 @@ footer .country-location {
     width: 100%;
     font-weight: 300;
     letter-spacing: 0px;
-    font-size: 52px;
+    font-size: 54px;
   }
   .new-hero-img {
     background-size: 150%;
     background-image: url(./images/new-urlaubstracker-dW8dOC8r7O4-unsplash.jpg);
-    background-position: 50% 4%;
+    background-position: 10% 0%;
   }
   .new-hero-text-group {
     margin-top: 90px;
@@ -583,11 +589,10 @@ footer .country-location {
   }
   .new-hero-button {
     width: 100%;
-    min-width: 300px;
+    min-width: 280px;
     max-width: -moz-fit-content;
     max-width: fit-content;
-    font-size: 17px;
-    border: 1px solid white;
+    font-size: 18px;
   }
   .section-hero {
     height: 760px;
